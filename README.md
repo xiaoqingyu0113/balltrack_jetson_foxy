@@ -2,7 +2,6 @@
 
 This page is used to take down notes for all the hardworks I've been through to get everything working correctly.
 
----
 
 
 
