@@ -7,9 +7,11 @@ This page is used to take down notes for all the hardworks I've been through to 
 The original [tutorial](https://docs.ros.org/en/iron/p/spinnaker_camera_driver/) is a good starting point. But for the use on Jetson, some annoying errors need to be addressed.
 
 1. **error: <camera_info_manager/camera_info_manager.hpp>**
- - solution:
-   `sudo apt install ros-foxy-image-common`
-- **error: std:: "optional" in namespace "std" does not name a template type.**
+	- solution:
+
+   		`sudo apt install ros-foxy-image-common`
+   
+2. **error: std:: "optional" in namespace "std" does not name a template type.**
 	- solution: should change or add the c++ standard in CMakeLists.txt
    ```
 	set(CMAKE_CXX_STANDARD_17)
