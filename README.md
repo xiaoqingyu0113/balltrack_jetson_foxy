@@ -11,8 +11,8 @@ The original [tutorial](https://docs.ros.org/en/iron/p/spinnaker_camera_driver/)
 - ** error: std:: "optional" in namespace "std" does not name a template type.**
 	- slution: should change or add the c++ standard in CMakeLists.txt
    ```
-		`set(CMAKE_CXX_STANDARD_17)
-		`set(CMAKE_CXX_STANDARD_REQUIRED ON)
+		set(CMAKE_CXX_STANDARD_17)
+		set(CMAKE_CXX_STANDARD_REQUIRED ON)
    ```
   
 ## Install OpenCV with CUDA Enabled
