@@ -9,8 +9,8 @@ The original [tutorial](https://docs.ros.org/en/iron/p/spinnaker_camera_driver/)
 1. **error: <camera_info_manager/camera_info_manager.hpp>**
  - solution:
    `sudo apt install ros-foxy-image-common`
-- ** error: std:: "optional" in namespace "std" does not name a template type.**
-	- slution: should change or add the c++ standard in CMakeLists.txt
+- **error: std:: "optional" in namespace "std" does not name a template type.**
+	- solution: should change or add the c++ standard in CMakeLists.txt
    ```
 	set(CMAKE_CXX_STANDARD_17)
 	set(CMAKE_CXX_STANDARD_REQUIRED ON)
