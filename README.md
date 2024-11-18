@@ -41,4 +41,17 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D PYTHON3_PACKAGES_PATH=$(python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())") \
  ..
 ```
+To make sure python3 can find the correct build of cv2. We need to make sure no cv2 is installed locally.
+
+```
+python3 -m pip uninstall opencv-python
+```
+
+Finally, if everything is correct, the following command should return a value larger than 0.
+
+```
+$ python3
+>>> cv2.cuda.getCudaEnabledDeviceCount() # should return 1 or larger than 1
+```
+
 
