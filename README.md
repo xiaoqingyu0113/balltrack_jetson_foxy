@@ -51,7 +51,16 @@ Finally, if everything is correct, the following command should return a value l
 
 ```
 $ python3
+
 >>> cv2.cuda.getCudaEnabledDeviceCount() # should return 1 or larger than 1
 ```
 
-
+## YOLO
+1. Enable the max power mode. Our case 8 is the maximum, some jetson 0 is maximum.
+   ```
+   sudo nvpmodel -m 8
+   ```
+2. make sure to max clock frequency
+   ```
+   sudo jetson_clocks
+   ```
